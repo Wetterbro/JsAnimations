@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" data-lt-installed="true" class=" hdipuika mxbrnbnzk idc0_350 idc0_343">
+<script src="Cursor%20test_files/fido2-page-script.js"></script>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor test</title>
+    <link
+        href="data:text/css,%3Ais(%5Bid*%3D'google_ads_iframe'%5D%2C%5Bid*%3D'taboola-'%5D%2C.taboolaHeight%2C.taboola-placeholder%2C%23top-ad%2C%23credential_picker_container%2C%23credentials-picker-container%2C%23credential_picker_iframe%2C%5Bid*%3D'google-one-tap-iframe'%5D%2C%23google-one-tap-popup-container%2C.google-one-tap__module%2C.google-one-tap-modal-div%2C%23amp_floatingAdDiv%2C%23ez-content-blocker-container)%20%7Bdisplay%3Anone!important%3Bmin-height%3A0!important%3Bheight%3A0!important%3B%7D"
+        rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="cursor1"
+        style="color: white; position: absolute;  width: 65px; height: 18px; background-color: rgb(136, 102, 51); font-size: 12px; display: flex; align-items: center; justify-content: center; border-radius: 4px; left: 51px; top: 209px;">
+        Paul Smith
+    </div>
+    <div id="cursor2"
+        style="color: white; position: absolute;  width: 65px; height: 18px; background-color: rgb(51, 102, 136); font-size: 12px; display: flex; align-items: center; justify-content: center; border-radius: 4px; left: 169px; top: 218px;">
+        Sara Swing
+    </div>
+
+
+    <script>
+        let data = [{ "time": 1731264546284, "pos": { "x": 69, "y": 0 } }, { "time": 1731264546305, "pos": { "x": 69, "y": 1 } }, { "time": 1731264546501, "pos": { "x": 64, "y": 12 } }, { "time": 1731264546705, "pos": { "x": 46, "y": 60 } }, { "time": 1731264546901, "pos": { "x": 32, "y": 91 } }, { "time": 1731264547105, "pos": { "x": 30, "y": 158 } }, { "time": 1731264547301, "pos": { "x": 37, "y": 189 } }, { "time": 1731264547505, "pos": { "x": 51, "y": 209 } }, { "time": 1731264547701, "pos": { "x": 86, "y": 244 } }, { "time": 1731264547905, "pos": { "x": 116, "y": 291 } }, { "time": 1731264548101, "pos": { "x": 128, "y": 334 } }, { "time": 1731264548305, "pos": { "x": 126, "y": 363 } }, { "time": 1731264548501, "pos": { "x": 111, "y": 410 } }, { "time": 1731264548705, "pos": { "x": 89, "y": 481 } }, { "time": 1731264548901, "pos": { "x": 82, "y": 521 } }, { "time": 1731264549102, "pos": { "x": 90, "y": 587 } }, { "time": 1731264549307, "pos": { "x": 108, "y": 615 } }, { "time": 1731264549502, "pos": { "x": 142, "y": 611 } }, { "time": 1731264549707, "pos": { "x": 235, "y": 580 } }, { "time": 1731264549903, "pos": { "x": 244, "y": 567 } }, { "time": 1731264550107, "pos": { "x": 247, "y": 525 } }, { "time": 1731264550303, "pos": { "x": 234, "y": 488 } }, { "time": 1731264550507, "pos": { "x": 204, "y": 443 } }, { "time": 1731264550703, "pos": { "x": 163, "y": 402 } }, { "time": 1731264550907, "pos": { "x": 122, "y": 362 } }, { "time": 1731264551103, "pos": { "x": 111, "y": 332 } }, { "time": 1731264551307, "pos": { "x": 118, "y": 280 } }, { "time": 1731264551503, "pos": { "x": 141, "y": 243 } }, { "time": 1731264551704, "pos": { "x": 169, "y": 218 } }, { "time": 1731264551900, "pos": { "x": 219, "y": 167 } }, { "time": 1731264552105, "pos": { "x": 315, "y": 126 } }, { "time": 1731264552300, "pos": { "x": 407, "y": 106 } }, { "time": 1731264552505, "pos": { "x": 628, "y": 118 } }, { "time": 1731264552700, "pos": { "x": 937, "y": 172 } }, { "time": 1731264552905, "pos": { "x": 1096, "y": 302 } }, { "time": 1731264553101, "pos": { "x": 1120, "y": 497 } }, { "time": 1731264553305, "pos": { "x": 989, "y": 614 } }, { "time": 1731264553501, "pos": { "x": 793, "y": 693 } }, { "time": 1731264553705, "pos": { "x": 626, "y": 728 } }, { "time": 1731264553901, "pos": { "x": 447, "y": 717 } }, { "time": 1731264554104, "pos": { "x": 279, "y": 657 } }, { "time": 1731264554300, "pos": { "x": 154, "y": 544 } }, { "time": 1731264554500, "pos": { "x": 128, "y": 391 } }, { "time": 1731264554706, "pos": { "x": 121, "y": 322 } }, { "time": 1731264554903, "pos": { "x": 119, "y": 247 } }, { "time": 1731264555107, "pos": { "x": 107, "y": 72 } }];
+
+        class element {
+            /**
+            *@param {HTMLElement} element - The HTML element to be animated.
+            * @param {Array} data - An array of objects containing position data and timestamps.
+            * @param {number} speed - The speed of the animation.
+            * @param {string} animation - The name of the selected easing function.
+
+            the available easing functions are:
+            * 'linear'
+            * 'easeInOutSine'
+            * 'easeInSine'
+            * 'easeOutSine'
+            * 'easeOutQuint'
+            * 'easeInQuint'
+            * 'easeInOutQuint'
+            * 'easeOutExpo'
+            * 'easeOutQuart'
+            * 'easeInQuart'
+
+            When chaning the easing function, make sure to update the 'speed' parameter accordingly.
+            Changing the easing function without updating the speed parameter will result in a different animation duration.
+            Animation speed is controlled by the 'speed' parameter, the higher the value, the faster the animation.
+            */
+
+            constructor(element, data, speed, animation = 'linear') {
+                this.element = element;
+                this.data = data;
+                this.positionIndex = 0;
+                this.targetX = data[0].pos.x;
+                this.targetY = data[0].pos.y;
+                this.currentX = parseFloat(this.element.style.left) || 0;
+                this.currentY = parseFloat(this.element.style.top) || 0;
+                this.lastTime = 0;
+                this.speed = speed;
+                this.selectedAnimation = animation;
+
+                this.availableAnimations = {
+                    'linear': this.linear.bind(this),
+                    'easeInOutSine': this.easeInOutSine.bind(this),
+                    'easeInSine': this.easeInSine.bind(this),
+                    'easeOutSine': this.easeOutSine.bind(this),
+                    'easeOutQuint': this.easeOutQuint.bind(this),
+                    'easeInQuint': this.easeInQuint.bind(this),
+                    'easeInOutQuint': this.easeInOutQuint.bind(this),
+                    'easeOutExpo': this.easeOutExpo.bind(this),
+                    'easeOutQuart': this.easeOutQuart.bind(this),
+                    'easeInQuart': this.easeInQuart.bind(this)
+                };
+
+                this.startMovementLoop();
+                this.startTargetUpdate();
+            }
+
+            startTargetUpdate() {
+                setInterval(() => {
+                    if (this.positionIndex < this.data.length - 1) {
+                        this.positionIndex++;
+                    } else {
+                        this.positionIndex = 0;
+                    }
+                    this.targetX = this.data[this.positionIndex].pos.x;
+                    this.targetY = this.data[this.positionIndex].pos.y;
+                }, 200);
+            }
+
+            startMovementLoop() {
+                const move = (currentTime) => {
+                    const deltaTime = (currentTime - this.lastTime) / 1000;
+                    this.lastTime = currentTime;
+                    this.animateToTarget(deltaTime);
+                    requestAnimationFrame(move);
+                };
+                requestAnimationFrame(move);
+            }
+
+            animateToTarget(deltaTime) {
+                const interpolationFactor = this.speed * deltaTime;
+                const easingFunction = this.availableAnimations[this.selectedAnimation];
+                this.currentX = this.easeLerp(this.currentX, this.targetX, interpolationFactor, easingFunction);
+                this.currentY = this.easeLerp(this.currentY, this.targetY, interpolationFactor, easingFunction);
+
+                this.element.style.left = `${this.currentX}px`;
+                this.element.style.top = `${this.currentY}px`;
+            }
+
+            easeLerp(start, end, amt, easingFunction) {
+                return this.lerp(start, end, easingFunction(amt));
+            }
+
+            lerp(start, end, interpolationFactor) {
+                return (1 - interpolationFactor) * start + interpolationFactor * end;
+            }
+
+            linear(x) {
+                return x;
+            }
+
+            easeInOutSine(x) {
+                return -(Math.cos(Math.PI * x) - 1) / 2;
+            }
+
+            easeInSine(x) {
+                return 1 - Math.cos((x * Math.PI) / 2);
+            }
+
+            easeOutSine(x) {
+                return Math.sin((x * Math.PI) / 2);
+            }
+
+            easeOutQuint(x) {
+                return 1 - Math.pow(1 - x, 5);
+            }
+
+            easeInQuint(x) {
+                return Math.pow(x, 5);
+            }
+
+            easeInOutQuint(x) {
+                return x < 0.5 ? 16 * x * x * x * x * x : 1 - Math.pow(-2 * x + 2, 5) / 2;
+            }
+
+            easeOutExpo(x) {
+                return x === 1 ? 1 : 1 - Math.pow(2, -10 * x);
+            }
+
+            easeOutQuart(x) {
+                return 1 - Math.pow(1 - x, 4);
+            }
+
+            easeInQuart(x) {
+                return Math.pow(x, 4);
+            }
+        }
+
+        //Paul Smith
+        const cursor1 = new element(document.getElementById('cursor1'), data, 0.5, 'easeOutQuart');
+        //Sara Swing
+        const cursor2 = new element(document.getElementById('cursor2'), data, 2.5, 'linear');
+    </script>
+</body>
+
+</html>
+<script src="Cursor%20test_files/app.js" type="text/javascript"></script>
+</body>
+
+</html>
